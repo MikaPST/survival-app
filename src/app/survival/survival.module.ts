@@ -5,6 +5,7 @@ import { CompassModule } from './compass/compass.module';
 import { BubbleModule } from './bubble/bubble.module';
 import { MapModule } from './map/map.module';
 import { SurvivalRoutingModule } from './survival-routing.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -17,7 +18,8 @@ import { SurvivalRoutingModule } from './survival-routing.module';
     CompassModule,
     BubbleModule,
     MapModule,
-    SurvivalRoutingModule
+    SurvivalRoutingModule,
+    RouterModule
   ],
   exports: [
     SurvivalComponent
