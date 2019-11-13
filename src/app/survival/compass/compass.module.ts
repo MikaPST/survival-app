@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CompassComponent } from './compass.component';
 import { CompassRoutingModule } from './compass-routing.module';
+import { SharedModule } from 'src/app/shared/modules/shared.module';
 
 
 
@@ -11,10 +12,8 @@ import { CompassRoutingModule } from './compass-routing.module';
   ],
   imports: [
     CommonModule,
-    CompassRoutingModule
-  ],
-  exports: [
-    CompassComponent
+    CompassRoutingModule,
+    SharedModule
   ]
 })
 export class CompassModule { }

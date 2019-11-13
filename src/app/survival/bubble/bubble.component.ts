@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, AfterViewChecked } from '@angular/core';
 
 @Component({
   selector: 'app-bubble',
   templateUrl: './bubble.component.html',
   styleUrls: ['./bubble.component.scss'],
 })
-export class BubbleComponent implements OnInit {
+export class BubbleComponent implements AfterViewChecked{
 
-  constructor() { }
+  constructor() {
+  }
+  
+  ngAfterViewChecked(){
+    console.log("Bubble Routed");
+   }
 
-  ngOnInit() {}
-
+  
 }

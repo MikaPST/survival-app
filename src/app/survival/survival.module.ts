@@ -1,13 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { SurvivalComponent } from './survival.component';
-import { CompassModule } from './compass/compass.module';
-import { BubbleModule } from './bubble/bubble.module';
-import { MapModule } from './map/map.module';
+import { SharedModule } from '../shared/modules/shared.module';
 import { SurvivalRoutingModule } from './survival-routing.module';
-import { RouterModule } from '@angular/router';
-
-
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -15,14 +10,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    CompassModule,
-    BubbleModule,
-    MapModule,
-    SurvivalRoutingModule,
-    RouterModule
-  ],
-  exports: [
-    SurvivalComponent
+    SharedModule,
+    SurvivalRoutingModule
   ]
 })
 export class SurvivalModule { }

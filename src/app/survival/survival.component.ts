@@ -5,10 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './survival.component.html',
   styleUrls: ['./survival.component.scss'],
 })
-export class SurvivalComponent implements OnInit {
+export class SurvivalComponent {
 
-  constructor() { }
+  protected title: String;
 
-  ngOnInit() {}
+  constructor() {
+    this.title = "Survival";
+   }
+
 
 }
