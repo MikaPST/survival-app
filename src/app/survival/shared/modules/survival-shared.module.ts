@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BarComponent } from './bar.component';
-
+import { DegreeModule } from '../component/degree/degree.module';
 
 
 @NgModule({
   declarations: [
-    BarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DegreeModule
   ],
   exports: [
-    BarComponent
+    DegreeModule
   ]
 })
-export class BarModule { }
+export class SurvivalSharedModule { }

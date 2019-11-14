@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { TitleService } from './shared/services/title.service';
 
 @Component({
   selector: 'app-survival',
@@ -9,9 +10,14 @@ export class SurvivalComponent {
 
   protected title: String;
 
-  constructor() {
+  constructor(
+    private titleService: TitleService
+  ) {
     this.title = "Survival";
-   }
+    this.titleService.getTitle().subscribe(
+      (value: string) => setTimeout(() => this.title = value)
+    );
+  }
 
 
 }
