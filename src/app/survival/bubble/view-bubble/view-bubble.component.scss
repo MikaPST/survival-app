@@ -1,0 +1,31 @@
+:host {
+
+    .ruler {
+        padding: 0.2em;
+        background-color: rgb(255, 224, 189);
+        margin-top: 15em;
+        margin-left: 5%;
+        margin-right: 5%;
+        position: relative;
+        border: 15px, solid, black;
+        border-radius: 30px;
+        border-width: 2.8px;
+        border-style: solid;
+        border-color: black;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+    }
+
+    .bubble {
+        display: inline-block;
+        // position: absolute;
+        background-color: rgb(25, 93, 170);
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border-width: 2.5px;
+        border-style: solid;
+        border-color: rgb(0, 10, 148);
+    }
+
+}

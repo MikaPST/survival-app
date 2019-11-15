@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-degree',
@@ -7,19 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DegreeComponent {
 
-  protected degreeGamma: number;
-  protected degreeAlpha: number;
-  protected degreeBeta: number;
+  @Input() degree: number;
 
-  constructor() {
-    this.degreeAlpha = 0;
-    this.degreeGamma = 0;
-    this.degreeBeta = 0;
-    window.ondeviceorientation = (event) => {
-      this.degreeAlpha = event.alpha; 
-      this.degreeBeta = event.beta;
-      this.degreeGamma = event.gamma;
-    }
-  }
+
+  constructor() { }
 
 }
